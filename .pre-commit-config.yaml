@@ -28,3 +28,9 @@ repos:
     rev: v0.3
     hooks:
       - id: circleci_validate
+
+  - repo: https://github.com/psf/black
+    rev: stable
+    hooks:
+      - id: black
+        language_version: python3.10
